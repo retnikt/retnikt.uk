@@ -1,0 +1,13 @@
+site_name: retnikt
+theme:
+  name: null
+  custom_dir: 'mkdocs-material/material'
+  language: en
+  palette:
+    primary: 'blue'
+    accent: 'blue'
+  font:
+    text: 'Noto Sans'
+    code: 'Fira Code'
+  logo: ''
+  feature: false
