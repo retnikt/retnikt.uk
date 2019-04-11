@@ -9,5 +9,8 @@ theme:
   font:
     text: 'Noto Sans'
     code: 'Fira Code'
-  logo: ''
+  logo:
+    icon: 'developer_board'
   feature: false
+  favicon: 'assets/images/favicon2.png'
+copyright: '© retnikt 2019'
