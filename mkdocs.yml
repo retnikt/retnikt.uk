@@ -1,4 +1,5 @@
 site_name: retnikt
+site_url: 'https://retnikt.uk/'
 theme:
   name: null
   custom_dir: 'mkdocs-material/material'
@@ -29,6 +30,11 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
+  - markdown.extensions.attr_list
+  - markdown.extensions.def_list
+  - markdown.extensions.tables
+  - markdown.extensions.abbr
+  - pymdownx.extrarawhtml
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
@@ -38,6 +44,8 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences
+  - pymdownx.progressbar
+  - pymdownx.keys
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
