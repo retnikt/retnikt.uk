@@ -1,5 +1,5 @@
 # My Website
-Across my lifetime, I have tried numerous mechanisms for my website with a basic blog system, including WordPress, Pelican, Jekyll, and even a home-grown solution. I have now settled on [MkDocs](https://www.mkdocs.org/), which is definitely not intended for blogging, but I find it well-suited for the task.
+Across my lifetime, I have tried numerous mechanisms for my website with a basic blog system, including [WordPress](https://wordpress.org), [Pelican](https://blog.getpelican.com), [Jekyll](https://jekyllrb.com/), and even a home-grown solution on [Google App Engine](https://cloud.google.com/appengine/). I have now settled on [MkDocs](https://www.mkdocs.org/), which is definitely not intended for blogging, but I find it well-suited for the task.
 ## Getting Started
 I installed mkdocs with `#!bash pip install mkdocs` and created a new project using `#!bash mkdocs new .`. I also initialised a [Git repository on GitHub](https://github.com/retnikt/retnikt.uk) to version all the configuration and content.
 ## Customisation
@@ -149,3 +149,5 @@ Also, to get the Fira Code font to work we need to modify the `fonts` block in t
 All these modified files are available on my [GitHub](https://github.com/retnikt/retnikt.uk) repo for this project.
 ## Deploying
 Following the guide from [MkDocs](https://www.mkdocs.org/user-guide/deploying-your-docs/), I deployed to GitHub Pages with a custom domain ([retnikt.uk](https://retnikt.uk/)) which you have to put in a CNAME file in your `docs/` folder. Every time I  make a change I simply run `mkdocs gh-deploy`, which does all the work for you.
+### Continuous Integration
+In the future I hope to add some continuous integration to the building and deployment of the website, a topic I am totally new to. Look out for updates in the future!
