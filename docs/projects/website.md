@@ -1,5 +1,5 @@
 # My Website
-Across my lifetime, I have tried numerous mechanisms for my website with a basic blog system, including WordPress, Pelican, Jekyll, and even a home-grown solution. I have now settled on [MkDocs](TODO: link), which is definitely not intended for blogging, but I find it well-suited for the task.
+Across my lifetime, I have tried numerous mechanisms for my website with a basic blog system, including WordPress, Pelican, Jekyll, and even a home-grown solution. I have now settled on [MkDocs](https://www.mkdocs.org/), which is definitely not intended for blogging, but I find it well-suited for the task.
 ## Getting Started
 I installed mkdocs with `#!bash pip install mkdocs` and created a new project using `#!bash mkdocs new .`. I also initialised a [Git repository on GitHub](https://github.com/retnikt/retnikt.uk) to version all the configuration and content.
 ## Customisation
