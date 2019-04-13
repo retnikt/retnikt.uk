@@ -1,9 +1,9 @@
 site_name: retnikt
 site_url: 'https://retnikt.uk/'
 theme:
-  name: material
+  name: 'material'
   custom_dir: 'theme'
-  language: en
+  language: 'en'
   palette:
     primary: 'blue'
     accent: 'blue'
