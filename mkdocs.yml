@@ -1,8 +1,8 @@
 site_name: retnikt
 site_url: 'https://retnikt.uk/'
 theme:
-  name: null
-  custom_dir: 'mkdocs-material/material'
+  name: material
+  custom_dir: 'theme'
   language: en
   palette:
     primary: 'blue'
