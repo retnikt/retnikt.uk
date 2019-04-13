@@ -424,7 +424,7 @@
                 
                 
                 <h1 id="my-website">My Website<a class="headerlink" href="#my-website" title="Permanent link">&para;</a></h1>
-<p>Across my lifetime, I have tried numerous mechanisms for my website with a basic blog system, including WordPress, Pelican, Jekyll, and even a home-grown solution. I have now settled on <a href="TODO: link">MkDocs</a>, which is definitely not intended for blogging, but I find it well-suited for the task.</p>
+<p>Across my lifetime, I have tried numerous mechanisms for my website with a basic blog system, including WordPress, Pelican, Jekyll, and even a home-grown solution. I have now settled on <a href="https://www.mkdocs.org/">MkDocs</a>, which is definitely not intended for blogging, but I find it well-suited for the task.</p>
 <h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
 <p>I installed mkdocs with <code class="codehilite">pip install mkdocs</code> and created a new project using <code class="codehilite">mkdocs new .</code>. I also initialised a <a href="https://github.com/retnikt/retnikt.uk">Git repository on GitHub</a> to version all the configuration and content.</p>
 <h2 id="customisation">Customisation<a class="headerlink" href="#customisation" title="Permanent link">&para;</a></h2>
@@ -433,7 +433,7 @@
 <p>The first thing to do is pick a theme. I chose the popular and brilliant <a href="https://squidfunk.github.io/mkdocs-material/">mkdocs-material</a>.
 <img alt="mkdocs-material" src="https://i.imgur.com/BjcuAVf.png" />
 To install, you can follow <a href="https://squidfunk.github.io/mkdocs-material/">this guide</a> for detailed instructions, but essentially: you use pip. (<code class="codehilite">pip install mkdocs-material</code>)</p>
-<details class="abstract"><summary>Code</summary><div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
+<details class="abstract" open="open"><summary>Code</summary><div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
   <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;material&#39;</span>
   <span class="nt">custom_dir</span><span class="p">:</span> <span class="s">&#39;theme&#39;</span>
 </pre></div>
@@ -441,7 +441,7 @@ To install, you can follow <a href="https://squidfunk.github.io/mkdocs-material/
 </details>
 <p>The <code class="codehilite">custom_dir</code> line is so that we can override parts of the HTML.</p>
 <p>We can make some tweaks to the rest of the appearance too, including colours, fonts, and <a href="https://squidfunk.github.io/mkdocs-material/getting-started/#configuration">many other options</a>. Here's my final <code class="codehilite">theme</code> section:</p>
-<details class="abstract"><summary>Code</summary><div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
+<details class="abstract" open="open"><summary>Code</summary><div class="codehilite"><pre><span></span><span class="nt">theme</span><span class="p">:</span>
   <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;material&#39;</span>
   <span class="nt">custom_dir</span><span class="p">:</span> <span class="s">&#39;theme&#39;</span>
   <span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">en</span>
@@ -460,13 +460,13 @@ To install, you can follow <a href="https://squidfunk.github.io/mkdocs-material/
 </details>
 <h3 id="extra-options">Extra Options<a class="headerlink" href="#extra-options" title="Permanent link">&para;</a></h3>
 <p>First let's set some basic options:</p>
-<details class="abstract"><summary>Code</summary><div class="codehilite"><pre><span></span><span class="nt">site_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">retnikt</span>
+<details class="abstract" open="open"><summary>Code</summary><div class="codehilite"><pre><span></span><span class="nt">site_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">retnikt</span>
 <span class="nt">site_url</span><span class="p">:</span> <span class="s">&#39;https://retnikt.uk/&#39;</span>
 </pre></div>
 
 </details>
 <p>I'm going to add a copyright to the footer and some social media links, and enable a few (lots of) Markdown extensions:</p>
-<details class="abstract"><summary>Code</summary><div class="codehilite"><pre><span></span><span class="nt">copyright</span><span class="p">:</span> <span class="s">&#39;©</span><span class="nv"> </span><span class="s">retnikt</span><span class="nv"> </span><span class="s">2019&#39;</span>
+<details class="abstract" open="open"><summary>Code</summary><div class="codehilite"><pre><span></span><span class="nt">copyright</span><span class="p">:</span> <span class="s">&#39;©</span><span class="nv"> </span><span class="s">retnikt</span><span class="nv"> </span><span class="s">2019&#39;</span>
 <span class="nt">extra</span><span class="p">:</span>
   <span class="nt">social</span><span class="p">:</span>
     <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="s">&#39;github&#39;</span>
@@ -508,7 +508,7 @@ To install, you can follow <a href="https://squidfunk.github.io/mkdocs-material/
 </details>
 <h3 id="block-overrides">Block Overrides<a class="headerlink" href="#block-overrides" title="Permanent link">&para;</a></h3>
 <p>I want to customise some of the theme components, particularly the footer. I'm going to add a GitHub Pages reference (see <a href="#deploying">Deploying</a> below), and hide the Next/Previous arrows for the homepage. Here's what I changed in the <code class="codehilite">partials/footer.html</code> Jinja2 template.</p>
-<details class="abstract"><summary>Code</summary><div class="codehilite"><pre><span></span>  ...
+<details class="abstract" open="open"><summary>Code</summary><div class="codehilite"><pre><span></span>  ...
   <span class="c">&lt;!-- if this is the homepage, then don&#39;t display the arrows --&gt;</span>
   {% if (not page.is_homepage) and (page.previous_page or page.next_page) %}
     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;md-footer-nav&quot;</span><span class="p">&gt;</span>
@@ -530,7 +530,7 @@ To install, you can follow <a href="https://squidfunk.github.io/mkdocs-material/
 </details>
 <p>I also modified <code class="codehilite">partials/nav.html</code> as well, changing <code class="codehilite"><span class="cp">{{</span> <span class="nv">config.site_name</span> <span class="cp">}}</span><span class="x"></span></code> (which would contain the site name) to just "Navigation" and change "Table of contents" to just "Contents" with a modified language file (<code class="codehilite">partials/language/en.html</code>).</p>
 <p>Also, to get the Fira Code font to work we need to modify the <code class="codehilite">fonts</code> block in the HTML <code class="codehilite"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span></code>. In <code class="codehilite">main.html</code>, add:</p>
-<details class="abstract"><summary>Code</summary><div class="codehilite"><pre><span></span><span class="c">&lt;!-- override the fonts block --&gt;</span>
+<details class="abstract" open="open"><summary>Code</summary><div class="codehilite"><pre><span></span><span class="c">&lt;!-- override the fonts block --&gt;</span>
 {% block fonts %}
   <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
   <span class="c">/* use the Fira Code font from CDN */</span>
