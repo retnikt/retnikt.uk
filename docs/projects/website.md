@@ -10,7 +10,7 @@ The first thing to do is pick a theme. I chose the popular and brilliant [mkdocs
 To install, you can follow [this guide](https://squidfunk.github.io/mkdocs-material/) for detailed instructions, but essentially: you use pip. (`#!bash pip install mkdocs-material`)
 
 To enable this theme, we need to add it to the mkdocs.yml configuration file:
-??? abstract "Code"
+???+ abstract "Code"
     ```yaml
     theme:
       name: 'material'
@@ -20,7 +20,7 @@ The `custom_dir` line is so that we can override parts of the HTML.
 
 We can make some tweaks to the rest of the appearance too, including colours, fonts, and [many other options](https://squidfunk.github.io/mkdocs-material/getting-started/#configuration). Here's my final `theme` section:
 
-??? abstract "Code"
+???+ abstract "Code"
     ```yaml
     theme:
       name: 'material'
@@ -42,7 +42,7 @@ We can make some tweaks to the rest of the appearance too, including colours, fo
 ### Extra Options
 First let's set some basic options:
 
-??? abstract "Code"
+???+ abstract "Code"
     ```yaml
     site_name: retnikt
     site_url: 'https://retnikt.uk/'
@@ -50,7 +50,7 @@ First let's set some basic options:
 
 I'm going to add a copyright to the footer and some social media links, and enable a few (lots of) Markdown extensions:
 
-??? abstract "Code"
+???+ abstract "Code"
     ```yaml
     copyright: '© retnikt 2019'
     extra:
@@ -93,7 +93,7 @@ I'm going to add a copyright to the footer and some social media links, and enab
 ### Block Overrides
 I want to customise some of the theme components, particularly the footer. I'm going to add a GitHub Pages reference (see [Deploying](#deploying) below), and hide the Next/Previous arrows for the homepage. Here's what I changed in the `partials/footer.html` Jinja2 template.
 
-??? abstract "Code"
+???+ abstract "Code"
     ```html
       ...
       <!-- if this is the homepage, then don't display the arrows -->
@@ -117,7 +117,7 @@ I also modified `partials/nav.html` as well, changing `{{ config.site_name }}` (
 
 Also, to get the Fira Code font to work we need to modify the `fonts` block in the HTML `#!html <head>`. In `main.html`, add:
 
-??? abstract "Code"
+???+ abstract "Code"
     ```html
     <!-- override the fonts block -->
     {% block fonts %}
