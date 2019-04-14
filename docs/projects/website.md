@@ -151,3 +151,4 @@ All these modified files are available on my [GitHub](https://github.com/retnikt
 Following the guide from [MkDocs](https://www.mkdocs.org/user-guide/deploying-your-docs/), I deployed to GitHub Pages with a custom domain ([retnikt.uk](https://retnikt.uk/)) which you have to put in a CNAME file in your `docs/` folder. Every time I  make a change I simply run `mkdocs gh-deploy`, which does all the work for you.
 ### Continuous Integration
 In the future I hope to add some continuous integration to the building and deployment of the website, a topic I am totally new to. Look out for updates in the future!
+
